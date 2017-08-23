@@ -1,0 +1,33 @@
+{
+  "name": "aframe-maze-sample",
+  "version": "1.0.0",
+  "description": "A-Frame Sample VR-Maze",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jyuko/aframe-maze-sample.git"
+  },
+  "keywords": [
+    "aframe",
+    "aframevr",
+    "vr",
+    "webvr"
+  ],
+  "author": "jyuko",
+  "license": "MIT",
+  "dependencies": {
+    "aframe": "^0.3.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "browserify": "^13.1.1",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
