@@ -14,7 +14,7 @@
         
         <script>
 window.addEventListener('devicemotion', function(event){ //デバイスが動いたときに発火
-    if(event.acceleration.z>5) document.getElementById('accelerationZ').innerHTML = event.acceleration.z; // event.acceleration.zで前後方向の加速度取得
+    document.getElementById('accelerationZ').innerHTML = event.acceleration.z; // event.acceleration.zで前後方向の加速度取得
 
         });
         </script>
