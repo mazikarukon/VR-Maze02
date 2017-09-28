@@ -28,7 +28,7 @@ function movePlayer() {
     }
         
     if (camera && !isIntersect && accZ < -2) {
-        for(i = 0;i=100;i++){
+        for(i = 0;i < 100;i++){
         
             var position = camera.getAttribute('position');
             var rotation = camera.getAttribute('rotation');
