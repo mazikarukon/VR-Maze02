@@ -20,14 +20,22 @@ AFRAME.registerComponent('collider-check', {
 
 function movePlayer() {
     var camera = document.getElementById('camera');
+    
+    window.addEventListener('devicemotion', function(event){
+        var accZ = event.acceleration.z;
+    }
+        
+    if (camera && !isIntersect && accZ < -2) {
+        for(i = 0;i=100;i++){
+        
+            var position = camera.getAttribute('position');
+            var rotation = camera.getAttribute('rotation');
 
-    if (camera && !isIntersect) {
-        var position = camera.getAttribute('position');
-        var rotation = camera.getAttribute('rotation');
-
-        position.x += -Math.cos((rotation.y - 90) * Math.PI / 180) * speed;
-        position.z += Math.sin((rotation.y - 90) * Math.PI / 180) * speed;
-        camera.setAttribute('position', position);
+            position.x += -Math.cos((rotation.y - 90) * Math.PI / 180) * speed;
+            position.z += Math.sin((rotation.y - 90) * Math.PI / 180) * speed;
+            camera.setAttribute('position', position);
+        }
+            
     }
 }
 
