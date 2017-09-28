@@ -25,7 +25,7 @@ function movePlayer() {
         var accZ = event.acceleration.z;
     }
         
-    if (camera && isIntersect && accZ < -2) {
+    if (camera && !isIntersect && accZ < -2) {
         for(i = 0;i=100;i++){
         
             var position = camera.getAttribute('position');
