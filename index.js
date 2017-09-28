@@ -2,6 +2,8 @@
 
 require('aframe');
 
+<meta name="viewport" content="initial-scale=1.0">
+    
 var t = 0;
 var speed = 0.01;
 var isIntersect = false;
