@@ -1,3 +1,4 @@
+/*
 'use strict';
 
 require('aframe');
@@ -47,3 +48,4 @@ function render() {
     movePlayer();
 }
 render();
+*/
