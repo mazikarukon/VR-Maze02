@@ -22,7 +22,7 @@ function movePlayer() {
     var camera = document.getElementById('camera');
     
     window.addEventListener('devicemotion', function(event){
-        var accZ = event.acceleration.z;
+        int accZ = event.acceleration.z;
     }
         
     if (camera && !isIntersect && accZ < -2) {
