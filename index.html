@@ -78,9 +78,10 @@ window.addEventListener('devicemotion', function(event){ //デバイスが動い
         <a-sky color="#ECECEC"></a-sky>
         <a-entity id="camera" camera look-controls raycaster="objects: .collidable; far: 0.5;" collider-check rotation="0 0 0" position="0 0.3 0"></a-entity>
     </a-scene>
+            <!--
             <script>
             var t = 0;
-var speed = 0.00001;
+var speed = 0.01;
 var isIntersect = false;
 AFRAME.registerComponent('collider-check', {
     dependencies: ['raycaster'],
@@ -113,14 +114,14 @@ function movePlayer() {
     }
 }
 function render() {
-    t += 0.00001;
+    t += 0.01;
     requestAnimationFrame(render);
     movePlayer();
 }
 render();
             </script>
             
-            
+            -->
             
             
 </body>
