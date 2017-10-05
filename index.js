@@ -3,7 +3,7 @@
 require('aframe');
 
 var t = 0;
-var speed = 0.01;
+var speed = 0;
 var isIntersect = false;
 
 AFRAME.registerComponent('collider-check', {
